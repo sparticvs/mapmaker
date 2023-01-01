@@ -292,7 +292,7 @@ void do_fwrite(); /* args: FILE *fp; char *string; no processing happens */
 #define fnl(fp) fwrite(fp,"\n")
 
 void finput();  /* args: FILE *fp; char *str; int max_input_chars; */
-void fgetln();  /* args: FILE *fp; side-effects global char *ln; 
+void mapm_fgetln(FILE *fp);  /* args: FILE *fp; side-effects global char *ln; 
    Finput() and fgetln() both return a filter()ed line, and on end-of-file, the
    ENDOFILE message is sent. Str must have room for max_input_chars+1 chars,
    and only max_input_chars-1 chars can usually be read, as a '\n' may be read

@@ -943,7 +943,7 @@ FILE *fp;
     MAP  *map;
 
     /* chromosomes */
-    fgetln(fp);
+    mapm_fgetln(fp);
     stoken(&ln,sREQUIRED,word);
     if (!streq(word,"*Chromosomes:") || !itoken(&ln,iREQUIRED,&num_chroms)) {
         baddata("error finding *Chromosomes:");
@@ -957,7 +957,7 @@ FILE *fp;
         baddata("listed number of chromosomes and actual number do not agree");
     }
 
-    fgetln(fp);
+    mapm_fgetln(fp);
     if (!streq(ln,"*Assignments and Placements:"))
         baddata("error finding *Assignments and Placements:");
     for (locus=0; locus < raw.num_markers; locus++) {

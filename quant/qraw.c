@@ -124,7 +124,7 @@ int data_loaded() { return(raw.file[0]!='\0'); }
 
 void getdataln(fp) /* get next nonblank/noncomment data file line */
 FILE *fp;
-{ do { fgetln(fp); BADDATA_line_num++; } while(nullstr(ln) || ln[0]=='#'); 
+{ do { mapm_fgetln(fp); BADDATA_line_num++; } while(nullstr(ln) || ln[0]=='#'); 
   BADDATA_ln= ln; }
 real read_map_distance();
 void read_map_locus();

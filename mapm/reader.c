@@ -81,7 +81,7 @@ void data_init()
 
 void getdataln(fp) /* get next nonblank,noncomment data file line */
 FILE *fp;
-{ do { fgetln(fp); data_line++; } while (nullstr(ln)||ln[0]=='#'); }
+{ do { mapm_fgetln(fp); data_line++; } while (nullstr(ln)||ln[0]=='#'); }
 
   
 void baddata(reason) /* send data reading error message */

@@ -300,8 +300,7 @@ int length;
 }
 
 
-void fgetln(fp) /* ln is side-effected. */
-FILE *fp;
+void mapm_fgetln(FILE *fp) /* ln is side-effected. */
 { 
     if (fp==stdin) { getln("? "); return; }
     ln=lnptr; 

@@ -198,7 +198,7 @@ long index;
     long fseekvalue= 0L;
     frewind(fp);
     run while (fseekvalue < index-1) {
-	fgetln(help_file);
+	mapm_fgetln(help_file);
 	fseekvalue+=len(ln)+1;
     } except_when(ENDOFILE) return(FALSE);
     return(TRUE);

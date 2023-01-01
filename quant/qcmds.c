@@ -1365,7 +1365,7 @@ command load_data()
 	run {
 	    if (!make_filename(dfile,FORCE_EXTENSION,DATA_EXT)) send(CANTOPEN);
 	    fpa= open_file(dfile,READ);
-	    fgetln(fpa);
+	    mapm_fgetln(fpa);
 
 	    if (streq(ln,"prepared data f2 backcross")) {
 		strcpy(geno_chars,default_backcross_chars);

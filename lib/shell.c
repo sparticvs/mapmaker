@@ -1080,12 +1080,12 @@ command help()
 		else if (topic_help_key[i]==HELPLESS) print(NO_HELP_KEY);
 		else {
 		    fgoto_line(help_file,topic_help_key[i]);
-		    fgetln(help_file);
+		    mapm_fgetln(help_file);
 		    got_any=FALSE;
 		    while (ln[0]!='@') {
 			got_any=TRUE;
 			print(ln); nl();
-			fgetln(help_file);
+			mapm_fgetln(help_file);
 		    }
 		    if (!got_any) print(NO_HELP_KEY);
 		}
@@ -1131,12 +1131,12 @@ command help()
 		else if (cmd[i]->help_key==HELPLESS) print(NO_HELP_KEY);
 		else {
 		    fgoto_line(help_file,cmd[i]->help_key);
-		    fgetln(help_file);
+		    mapm_fgetln(help_file);
 		    got_any=FALSE;
 		    while (ln[0]!='@') {
 			got_any=TRUE;
 			print(ln); nl();
-			fgetln(help_file);
+			mapm_fgetln(help_file);
 		    }
 		    if (!got_any) print(NO_HELP_KEY);
 		}
@@ -1164,10 +1164,10 @@ command about()
       { print(NO_HELP_KEY); nl(); print(SURROGATE_ABOUT); }
     else {
 	fgoto_line(help_file,n);
-	fgetln(help_file);
+	mapm_fgetln(help_file);
 	while (ln[0]!='@') {
 	    print(ln); nl();
-	    fgetln(help_file);
+	    mapm_fgetln(help_file);
 	}
     }
     nl(); print(MOREHELP0); print(MOREHELP1); print(MOREHELP2);
