@@ -181,7 +181,7 @@ type of a signal handling function used as an argument to signal().
 #ifdef _SYS_SUNOS /* the @#!$% map pages lie */
 #define SIGHANDLE int
 #define strerror(num) (num<sys_nerr ? sys_errlist[num]:(char*)NULL)
-extern char *sys_errlist[]; extern int sys_nerr;
+#include <errno.h>
 #endif
 #ifdef _SYS_AUX
 #define SIGHANDLE void
