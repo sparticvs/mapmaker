@@ -29,9 +29,10 @@ bool subshell();      /* no args. returns T/F */
 /***** GET/SET DIRECTORY (code is in syscode.c) *****/
 
 /* These both also return FALSE on failure, TRUE if OK */
-bool get_directory();     /* args: char *str; str>=PATH_LENGTH+1 chars */
-bool change_directory();  /* args: char *str; str is directory name */
-
+bool get_directory(char *dir);     /* args: char *str; str>=PATH_LENGTH+1 chars */
+bool change_directory(char *dir);  /* args: char *str; str is directory name */
+bool get_home_directory(char *dir);
+bool get_code_directory(char *dir);
 
 /***** SORT OPERATIONS FOR SIMPLE ARRAYS (code is in mathlib.c) *****/
 

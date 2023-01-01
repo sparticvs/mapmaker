@@ -17,6 +17,7 @@
 #define INC_STR
 #define INC_MATH
 #define INC_HELP_DEFS
+#define INC_MISC
 #include "system.h"
 #include "shell.h" /* just to get the decl of error()? */
 
