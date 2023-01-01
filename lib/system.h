@@ -592,8 +592,7 @@ robust and portable) interfaces are provided by the library. */
 
 /* The BSD random number functions... seemingly not declared anywhere */
 #ifdef USE_RANDOM
-long random();
-int srandom();
+#include <stdlib.h>
 #endif
 
 /* The HPUX (and System V?) random number functions... ditto */
