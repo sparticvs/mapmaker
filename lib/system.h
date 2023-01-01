@@ -180,8 +180,8 @@ type of a signal handling function used as an argument to signal().
 #endif
 #ifdef _SYS_SUNOS /* the @#!$% map pages lie */
 #define SIGHANDLE int
-#define strerror(num) (num<sys_nerr ? sys_errlist[num]:(char*)NULL)
-#include <errno.h>
+//#define strerror(num) (num<sys_nerr ? sys_errlist[num]:(char*)NULL)
+//#include <errno.h>
 #endif
 #ifdef _SYS_AUX
 #define SIGHANDLE void
@@ -583,7 +583,7 @@ robust and portable) interfaces are provided by the library. */
 #include <signal.h> 
 #include <errno.h> 	
 #include <time.h>       /* for ctime() def - Who does not have this file? */
-#include <malloc.h>
+#include <stdlib.h>
 #include <sys/types.h>
 
 #ifdef TRY_WINSIZE
