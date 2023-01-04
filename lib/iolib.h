@@ -372,7 +372,7 @@ extern int tty_errors, file_errors, puts_errors;
 
 bool boing();
 bool do_clear_screen();
-bool do_highlight();
+bool do_highlight(bool reverse);
 bool do_delete_previous_line();
 bool do_cursor_left(); /* args int spaces; char *str_to_then_print; */
 #define FAR_LEFT -1

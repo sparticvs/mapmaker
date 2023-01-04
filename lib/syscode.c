@@ -615,8 +615,7 @@ bool do_delete_previous_line() /* Needed for the "Hit RETURN for more" thing */
 }
 
 
-bool do_highlight(reverse)
-bool reverse;
+bool do_highlight(bool reverse)
 {
 /* NEEDS WIMP AND MAC CONSOLE HOOK */
 #ifdef HAVE_CURSES
