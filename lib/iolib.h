@@ -312,8 +312,8 @@ void fgetdataln(); /* args: FILE *fp; int *count; side-effects global ln;
 #define fflush(fp)  do_fflush(fp)  /* redeclare the C library function */
 void do_fflush(); /* never call this directly */
 
-bool rename_file(); 
-/* args: char *old, new; in syscode.c renames old file with new name */
+
+bool rename_file(char *original_name, char *new_name);
 
 bool fgoto_line(); /* in syscode.c - replacement for fseek() */
 /* args: FILE *fp; long index; */

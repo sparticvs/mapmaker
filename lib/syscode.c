@@ -176,8 +176,7 @@ char *buf;
     return(FALSE);
 }
 
-bool rename_file(original_name,new_name)
-char *original_name, *new_name;
+bool rename_file(char *original_name, char *new_name)
 {
 #ifdef _SYS_DOS
     sf(ps,"copy %s %s",original_name,new_name);
