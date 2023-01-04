@@ -25,6 +25,11 @@
 #include "readline/history.h"
 #endif
 
+#ifdef TRY_TERMCAP
+#include <curses.h>
+#include <term.h>
+#endif
+
 /*********************** C-Library Extensions ********************************/
 
 /***** Time functions *****/
