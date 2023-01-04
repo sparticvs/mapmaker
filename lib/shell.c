@@ -1042,7 +1042,7 @@ command help()
 
 		    if (!nullstr(cmd[i]->abbreviation)) 
 		      sf(str,"%s (%s)",cmd[i]->name,cmd[i]->abbreviation);
-		    else sf(str,"%s",cmd[i]->name,"");
+		    else sf(str,"%s",cmd[i]->name);
 		    if (!nullstr(cmd[i]->cmd_help)) {
 			for (k=len(str); k<HELP_LEFT; k++) str[k]='.'; 
 			str[HELP_LEFT]='\0';
@@ -1059,7 +1059,7 @@ command help()
 		      { print("\nOTHER COMMANDS:\n"); got_any=TRUE; }
 		    if (!nullstr(cmd[i]->abbreviation))
 		      sf(ps,"%s (%s)\n",cmd[i]->name,cmd[i]->abbreviation);
-		    else sf(ps,"%s\n",cmd[i]->name,"");
+		    else sf(ps,"%s\n",cmd[i]->name);
 		    pr();
 		}
 	    }
