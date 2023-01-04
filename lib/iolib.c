@@ -717,8 +717,7 @@ char *simple_str, *fancy_str;
 #endif
 
 
-bool do_hold(start,more_on)
-bool start, more_on;
+bool do_hold(bool start, bool more_on)
 { 
     if (start==TRUE && !holding) {
 	flush_and_force_nl(TRUE); 
