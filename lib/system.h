@@ -11,6 +11,9 @@
 /* This file is part of MAPMAKER, Copyright 1987-1992 Whitehead Institute.
    See the READ.ME file for license agreement and non-warranty information. */
 
+#ifndef __SYSTEM_H__
+#define __SYSTEM_H__
+
 /***************************************************************************
 This file, along with the syscode.c file, is used to provide most, if
 not all system specific, definitions allowing our library files to
@@ -610,3 +613,4 @@ void dummy_math_calls();
 #undef fflush  /* a special version is used by the application code */
 
 /*************************************************************************/
+#endif //__SYSTEM_H__

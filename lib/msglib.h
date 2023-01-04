@@ -11,6 +11,9 @@
 /* This file is part of MAPMAKER 3.0b, Copyright 1987-1992, Whitehead Institute
    for Biomedical Research. All rights reserved. See READ.ME for license. */
 
+#ifndef __MSGLIB_H__
+#define __MSGLIB_H__
+
 /*** Predefined Messages for sending. ***/
 #define RERUN		1
 #define PUNT		2
@@ -241,3 +244,4 @@ extern bool hit_interrupt;
 
 
 
+#endif //__MSGLIB_H__

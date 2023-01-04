@@ -11,6 +11,9 @@
 /* This file is part of MAPMAKER 3.0b, Copyright 1987-1992, Whitehead Institute
    for Biomedical Research. All rights reserved. See READ.ME for license. */
 
+#ifndef __SHELL_H__
+#define __SHELL_H__
+
 extern bool wizard_mode;
 void null_command();
 extern FILE *help_file;
@@ -200,3 +203,4 @@ typedef struct {
 
 extern COMMAND the_divider; /* dummy thing - used to put dividers in menus */
 
+#endif //__SHELL_H__

@@ -11,6 +11,9 @@
 /* This file is part of MAPMAKER 3.0b, Copyright 1987-1992, Whitehead Institute
    for Biomedical Research. All rights reserved. See READ.ME for license. */
 
+#ifndef __STRLIB_H__
+#define __STRLIB_H__
+
 /***** String and parsing functions for the helpers library *****/
 
 /****************************************************************************
@@ -323,9 +326,4 @@ char *binary(); /* args: int num_to_print, num_bits; char *str; */
 
 void str_init();
 
-
-
-
-
-
-
+#endif //__STRLIB_H__

@@ -11,6 +11,9 @@
 /* This file is part of MAPMAKER 3.0b, Copyright 1987-1992, Whitehead Institute
    for Biomedical Research. All rights reserved. See READ.ME for license. */
 
+#ifndef __MEMLIB_H__
+#define __MEMLIB_H__
+
 /***************************************************************************
 The following are good specs for writing memory allocating/freeing routines:
 
@@ -122,3 +125,4 @@ void pary_r();
 void pary_r2x2();
 void pary_r4();
 
+#endif //__MEMLIB_H__

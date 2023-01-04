@@ -11,6 +11,9 @@
 /* This file is part of MAPMAKER 3.0b, Copyright 1987-1992, Whitehead Institute
    for Biomedical Research. All rights reserved. See READ.ME for license. */
 
+#ifndef __MISCLIB_H__
+#define __MISCLIB_H__
+
 /***** GETTING THE TIME (code is in syscode.c) *****/
 /* DO NOT use the time() system function alone, it's not portable! */
 
@@ -143,3 +146,4 @@ real pick_from_distribution();  /* args: DISTRIBUTION *dist; real *prob;
   Return a randomly chosen deviation d from the distribution, and optionally
   set *prob (if non-NULL) to d's CUMULATIVE probability. */
 
+#endif //__MISCLIB_H__

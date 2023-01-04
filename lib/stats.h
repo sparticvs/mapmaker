@@ -11,6 +11,9 @@
 /* This file is part of MAPMAKER 3.0b, Copyright 1987-1992, Whitehead Institute
    for Biomedical Research. All rights reserved. See READ.ME for license. */
 
+#ifndef __STATS_H__
+#define __STATS_H__
+
 typedef struct normal_test {
     real skew;
     real kurt;
@@ -38,3 +41,4 @@ NORMAL_TEST *check_normalcy();
 void print_rhisto();
 
 
+#endif //__STATS_H__

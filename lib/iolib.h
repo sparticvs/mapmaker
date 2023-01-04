@@ -90,6 +90,9 @@ computationally critical loops, as iocheck() may take some time itself
 exists but does nothing, and it may never...
 ***************************************************************************/
 
+#ifndef __IOLIB_H__
+#define __IOLIB_H__
+
 
 extern char *ps, *ln;  /* these global strings are malloced by io_init() */
 void iocheck();   /* no args; CURRENTLY A NOP */
@@ -416,3 +419,4 @@ bool gnu_copyright();
 
 bool edit_line(); /* make real decl above */
 
+#endif // ___IOLIB_H__

@@ -9,6 +9,9 @@
 
 ******************************************************************************/
 
+#ifndef __MATHLIB_H__
+#define __MATHLIB_H__
+
 /* Numeric stuff for the helpers library */
 
 /********** THE FOLLOWING MATH FUNCTIONS AWRE KNOWN TO BE PORTABLE. **********
@@ -108,3 +111,4 @@ void do_seedrand();
 #define math_init() { seedrand(NONRANDOM); } /* called by lib_init() */
 
 
+#endif //__MATHLIB_H__

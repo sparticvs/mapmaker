@@ -11,6 +11,9 @@
 /* This file is part of MAPMAKER 3.0b, Copyright 1987-1992, Whitehead Institute
    for Biomedical Research. All rights reserved. See READ.ME for license. */
 
+#ifndef __TABLE_H__
+#define __TABLE_H__
+
 /* Tables are a generally useful structure, allowing one to make a list of
    strings, where each is assigned either a numeric or alphanumeric key. 
    Tables can be made to either expand themselves as needed, or to bash old 
@@ -109,3 +112,5 @@ extern TABLE *cmd_history;
 	"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 #define NAME_CHARS \
  	"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789._"
+
+#endif //__TABLE_H__

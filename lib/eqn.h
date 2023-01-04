@@ -11,6 +11,9 @@
 /* This file is part of MAPMAKER 3.0b, Copyright 1987-1992, Whitehead Institute
    for Biomedical Research. All rights reserved. See READ.ME for license. */
 
+#ifndef __EQN_H__
+#define __EQN_H__
+
 /* Eqn is broken up into 2 major parts.  Make_equation takes an 
 inputted equation and converts it to an array of structures in reverse
 polish notation, and evaluate_equation evlautes the equation over a set
@@ -104,3 +107,4 @@ int table_size;
 char **variable_table;
 real *value_table;
 
+#endif //__EQN_H__
