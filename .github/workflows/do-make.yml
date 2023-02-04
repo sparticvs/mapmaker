@@ -10,9 +10,10 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
+    - name: Install readline package
+      run: sudo apt install -y libreadline-dev
     - name: make mapmaker
       run: make mapmaker
     - name: make qtl
